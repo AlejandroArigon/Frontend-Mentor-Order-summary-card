@@ -1,0 +1,96 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-color: var(--Pale-blue);
+}
+.article{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 20px;   
+}
+.article-2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 50vh;
+}
+.cancel{
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #fff;
+}
+.cancel a{
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+.cancel a:hover{
+    color: #000;
+}
+.description{
+    color: var(--Desaturated-blue);
+}
+.payment{
+    border: none;
+    border-radius: 15px;
+    background-color: var(--Bright-blue);
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+.payment a{
+    color: #fff;
+    text-decoration: none;
+}
+.payment:hover{
+    background-color:#746bf1;
+    cursor: pointer;
+}
+.plan{
+    display: flex;
+    justify-content: space-around;
+}
+.plan a:hover{
+    color:#746bf1;
+    text-decoration: none;
+}
+.plan-name{
+    color: var(--Desaturated-blue);
+}
+.plan-name b{
+    color: #000;
+}
+.principal-image{
+    max-width: 90vw;
+    height: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.title{
+    font-size: 30px;
+    font-weight: 900;
+} 
